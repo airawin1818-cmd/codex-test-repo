@@ -131,3 +131,24 @@ python main.py
    - 序号是否在历史最大值后递增。
 
 8. 若需调试，直接按 `F5`，选择 `Python: Current File`（建议当前文件设为 `main.py`）。
+
+## Snake game (classic)
+
+Run a local static server from repo root and open `snake.html`:
+
+```bash
+python -m http.server 8000
+```
+
+Then navigate to:
+
+- `http://localhost:8000/snake.html`
+
+Manual checklist:
+
+- Arrow keys and WASD move the snake.
+- Space toggles pause/resume.
+- Snake grows and score increments after eating food.
+- Wall/self collision triggers game over.
+- `R` restarts the game.
+- On-screen touch buttons work for move/pause/restart.
